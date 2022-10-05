@@ -19,4 +19,20 @@ let tabuada =2;
      document.write("Feita por " + nome);
 
  }
+ function quadrado(){
+     for(var i =2; i < 101; i++){
+         document.write("0 quadrado de " + i + " é ")
+     }
+ }
+ function total(){
+     let valor = document.getElementById("val").value;
+     let juros = document.getElementById("ju").value;
+     let mes = document.getElementById("mes").value;
+     let resultado= 0;
+     for(let i= 1; i <= mes; i++){
+     let resultado = valor * (1+(juros/100));
+ }
+     document.write("O resultado é" + resultado);
+ }
+
 
